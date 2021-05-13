@@ -1,0 +1,58 @@
+/* colores de fondo */
+body{
+    background-color: linen;
+}
+footer{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color:gray;
+    font-weight: bold;    
+}
+nav{
+    background-color: grey;
+    
+    /* titulo principal */
+}
+h1{
+    text-align: center;
+    color: grey;
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.nav{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+#cervezas{
+    font-size: 40px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #f28e1c
+}
+.ipahoneygoldensubtit {
+    color:coral
+}
+.info1{
+   text-decoration-line:underline
+}
+#infoa1 {
+    font-weight: bold;
+    color: red;
+}
+.nosotros1 {
+    font-size: 40px;
+    text-align: center;
+    text-decoration-line: underline;
+    color:royalblue
+}
+.nosotros1a {
+    color: coral
+}
+.nosotros1b {
+    text-decoration-line: underline;
+}
+#form {
+    background-color:cadetblue;
+}
