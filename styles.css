@@ -7,6 +7,11 @@ nav{
     background-color: grey;
     border: solid 1px gray; 
 }
+nav a:hover{
+    text-decoration-line: underline;
+    font-size: 30px;
+}
+
 nav div img{
 display: flex;
 justify-content: end;
@@ -82,32 +87,66 @@ h1{
 }
 #ipa123{
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
+}
+#ipa12{
+    display: flex;
+    justify-content:center;
 }
 
 
-.ipahoneygoldensubtit {
-    color:coral;
+.tiposcervezas {
+    color:black;
+    text-align: center;
+}
+article {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+article a{
+    text-decoration: none;
+    color: black;
+}
+article a:hover{
+    border: 1px solid #252525;
+    border-radius: 15px;
+    background-color: antiquewhite;
 }
 
 #imgbirra{
-    display: flex;
     margin: 1px 80px;
     box-shadow: 7px 7px 25px -1px;
     border-radius: 10px;
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
 }
-div section article{
+div section article{   
+    width: 300px;
+    height: 410px;
  border: 1px black solid;
  border-radius: 10px;
-margin: 1px 3px;
+margin: 20px 20px;
 background-color: #c5a880;
+box-shadow:-13px 10px 25px -7px rgba(0,0,0,0.75) ;
 }
 div section article p{
-    font-size: 20px;
+    height: 100%;
+    text-align: center;
+    font-size: 15px;
     font-family: 'Lobster', cursive;
     font-weight: 500px;
+}
+#imgbirra:hover{
+    opacity: -10px;
+    box-shadow:-13px 10px 25px -7px rgba(0,0,0,0.75);
+}
+div section article p:hover{
+    text-decoration: underline;
 }
 
 #nosotros{
