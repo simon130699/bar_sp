@@ -19,6 +19,13 @@ nav{
     height: 90px;
     margin: 1px 1px 1px 1px;
 }
+/* media query */
+@media only screen and (min-width: 1200px) {
+    nav{
+       width: 100%; 
+    }
+}
+
 
 #navbar{
     display: flex;
@@ -109,34 +116,14 @@ li:hover .marron4{
 }
 #home{
     height: 500px;
-    width: 1565px;
+    width: 1550px;
     background-image: url(https://turismo.rionegro.gov.ar/files/contenidos/1547657058_slider-experiencias-cerveza-artesanal.jpg);
     background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
 }
 
-    .fb{
-        margin: 1px 1400px;
-        border-bottom-style:initial;
-        border-radius: 5px;
-        background-color:#3b5998;
-        }
-
-        .contact1{
-            margin: 1px 1400px;
-            border-bottom-style:initial;
-            border-radius: 5px;
-            background-color:#f6dcbf;  
-        }
-
-        .ig{
-                margin: 1px 1400px;
-                border-bottom-style:initial;
-                border-radius: 5px;
-                background-color:#3f729b;
-         }
-        
+    
         .home2{
         color: var(--texto1);
         font-size: 34px;
@@ -367,3 +354,4 @@ footer{
     font-weight: bold;   
     box-shadow: 7px 7px 25px -1px; 
 }
+
