@@ -18,16 +18,52 @@ nav {
   height: 90px;
   margin: 1px 1px 1px 1px;
 }
+#logo {
+  display: flex;
+  font-family: "Dancing Script";
+  font-size: 20px;
+}
+#logo img {
+  width: 50px;
+  height: 50px;
+}
+@media only screen and (max-width: 992px) {
+  #logo {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #logo img {
+    width: 35px;
+    height: 35px;
+  }
+  #logo {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #logo img {
+    width: 25px;
+    height: 25px;
+  }
+  #logo {
+    width: 40%;
+    height: 40%;
+  }
+}
+
 /* media query */
 
 @media only screen and (max-width: 600px) {
   nav {
     width: 100%;
   }
-  ul{
+  ul {
     width: 100%;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     left: -10px;
   }
   nav div a {
@@ -78,13 +114,6 @@ li {
   font-family: "Alfa Slab One";
   list-style: none;
   font-weight: bold;
-}
-
-nav div img {
-  display: flex;
-  justify-content: end;
-  width: 90px;
-  height: 90px;
 }
 
 nav ul {
@@ -198,8 +227,17 @@ li:hover .marron4 {
     align-items: center;
   }
 }
-
+header {
+  position: relative;
+}
+#iconos {
+  position: absolute;
+  margin-top: 10px;
+  z-index: 2;
+  opacity: 0.9;
+}
 .home2 {
+  padding: 30px;
   color: var(--texto1);
   font-size: 34px;
   font-family: var(--texto1);
@@ -229,6 +267,10 @@ h1 {
 /* section */
 
 @media only screen and (max-width: 600px) {
+  article div img {
+    width: 90%;
+    height: 70%;
+  }
   .gris {
     z-index: -2;
   }
@@ -237,6 +279,10 @@ h1 {
   .gris {
     z-index: -2;
   }
+  article #imgbirra {
+    width: 300px;
+    height: 150px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -244,6 +290,18 @@ h1 {
     width: 0px;
     height: 0px;
     z-index: -2;
+  }
+  article #imgbirra {
+    width: 300px;
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  article #imgbirra {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    margin: 0px;
   }
 }
 
@@ -265,8 +323,6 @@ h1 {
 }
 
 @media only screen and (min-width: 1200px) {
-  #padre {
-  }
   .gris {
     z-index: 1;
   }
@@ -353,7 +409,7 @@ div section article p {
 
 #imgbirra:hover {
   opacity: 0.8;
-  width: 160px;
+  width: 200px;
   height: 160px;
 }
 
@@ -368,15 +424,57 @@ div section article p:hover {
   color: coral;
 }
 
-#nosotros1a {
-  border: 2px solid black;
-  border-radius: 20px;
+#nosotros1 {
+  margin: 25px 100px;
   text-align-last: center;
+  align-items: center;
+}
+#nosotros1a p {
+  font-size: 14px;
+  font-family: var(--texto1);
+}
+
+@media only screen and (min-width: 1200px) {
+  #nosotros1a p {
+    width: 90%;
+  }
+  #nosotros1a span img {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #nosotros1a span img {
+    width: 80%;
+  }
+  #nosotros1a p {
+    text-align: center;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #nosotros1a span img {
+    width: 80%;
+  }
+  #nosotros1a p {
+    text-align: center;
+    width: 90%;
+  }
+}
+
+#nosotros1a {
+  background-color: darkgray;
+}
+body span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #nosotros1a h3 {
   color: #222831;
-  font-size: 30px;
+  font-size: 25px;
   font-family: sans-serif;
 }
 
@@ -451,8 +549,22 @@ div section article p:hover {
   font-weight: bold;
 }
 
+/* formulario */
+
 #contacto {
   color: black;
+  font-family: var(--texto1);
+}
+
+#form {
+  background-image: url(https://www.gentleman.excelsior.com.mx/wp-content/uploads/2019/03/G-BARRAS-01-1-1080x675.jpg);
+  background-position: center;
+  opacity: 0.8;
+}
+div form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media only screen and (min-width: 600px) {
@@ -493,3 +605,13 @@ footer {
     text-align: center;
   }
 }
+#ubicacion {
+  text-align: center;
+}
+
+#ubicacion iframe {
+  width: 900px;
+  height: 500px;
+}
+
+
