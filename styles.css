@@ -8,104 +8,94 @@
 
 body {
   background-color: var(--vivos);
-  margin: 0px;
+  margin:0px;
 }
 
 nav {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
+  width: 100%;
   height: 90px;
-  margin: 1px 1px 1px 1px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  background-color: var(--vivos);
 }
+
 #logo {
+  position: relative;
+  left: 50px;
   display: flex;
   font-family: "Dancing Script";
   font-size: 20px;
 }
+
 #logo img {
   width: 50px;
   height: 50px;
 }
-@media only screen and (max-width: 992px) {
-  #logo {
-    width: 60%;
-    height: 60%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  #logo img {
-    width: 35px;
-    height: 35px;
-  }
-  #logo {
-    width: 50%;
-    height: 50%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  #logo img {
-    width: 25px;
-    height: 25px;
-  }
-  #logo {
-    width: 40%;
-    height: 40%;
-  }
-}
 
 /* media query */
-
-@media only screen and (max-width: 600px) {
-  nav {
-    width: 100%;
+@media only screen and (max-width: 600px){
+ header #home{
+    width: 550px;
   }
-  ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    left: -10px;
-  }
-  nav div a {
-    font-size: 12px;
-  }
-  .marron1 {
-    z-index: -1;
-  }
-  .marron2 {
-    z-index: -1;
-  }
-  .marron3 {
-    z-index: -1;
-  }
-  .marron4 {
-    z-index: -1;
-  }
+nav{
+width: 100%;
+}
+#ul1 ul li a{
+  font-size: 10px;
+}
 }
 
-@media only screen and (min-width: 600px) {
-  nav div a {
-    font-size: 20px;
+@media only screen and (max-width: 768px){
+  header div h1{
+    font-size: 25px;
   }
+  header div{
+  }
+#ul1 ul li a{
+  font-size: 20px;
+}
 }
 
-@media only screen and (min-width: 768px) {
-  nav div a {
-    font-size: 24px;
-  }
-}
 
 @media only screen and (max-width: 992px) {
-  nav {
-    width: 100%;
+  header div h1{
+    position: absolute;
+    margin-top: 50px;
+    left: 160px;
   }
-  #ul1 {
-    width: 100%;
-  }
-  ul {
-    display: flex;
-    justify-content: center;
-  }
+nav #logo{
+  position: absolute;
+  margin: 0px;
+
+}
+nav{
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+}
+#ul1 ul li  {
+margin-top: 70px;
+}
+ul li .marron1{
+width: 0px;
+height: 0px;
+}
+ul li .marron2{
+  width: 0px;
+  height: 0px;
+}
+ul li .marron3{
+  width: 0px;
+  height: 0px;
+}
+ul li .marron4{
+  width: 0px;
+  height: 0px;
+}
 }
 
 li {
@@ -146,7 +136,7 @@ nav a {
 }
 
 .marron3 {
-  width: 72px;
+  width: 110px;
   height: 10px;
   background-color: var(--vivos);
   position: absolute;
@@ -155,7 +145,7 @@ nav a {
 }
 
 .marron4 {
-  width: 110px;
+  width: 160px;
   height: 10px;
   background-color: var(--vivos);
   position: absolute;
@@ -182,10 +172,14 @@ li:hover .marron4 {
   height: 3px;
   transition-duration: 200ms;
 }
+
+li:hover .marron4 {
+  height: 3px;
+  transition-duration: 200ms;
+}
 #home {
-  margin: 0%;
-  height: 400px;
-  width: 1400px;
+  height: 500px;
+  width: 100%;
   background-image: url(https://turismo.rionegro.gov.ar/files/contenidos/1547657058_slider-experiencias-cerveza-artesanal.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -193,51 +187,21 @@ li:hover .marron4 {
   background-size: cover;
 }
 
-@media only screen and (min-width: 992px) {
-  header {
-    width: 100%;
-  }
-  #home {
-    width: 100%;
-  }
-}
 
-@media only screen and (min-width: 600px) {
-  header {
-    width: 100%;
-  }
-  #home {
-    width: 100%;
-    align-items: center;
-  }
-  #home h1 {
-    margin: 0px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #home h1 {
-    margin: 0%;
-  }
-  header {
-    width: 100%;
-  }
-  #home {
-    width: 100%;
-    align-items: center;
-  }
-}
 header {
+  width: 100%;
   position: relative;
+  margin:100px 0px 0px 00px;
 }
-#iconos {
-  position: absolute;
-  margin-top: 10px;
-  z-index: 2;
-  opacity: 0.9;
+
+#home1{
+  width: 100%;
+  text-align: center;
 }
+
 .home2 {
-  padding: 30px;
+  width: 100%;
+  text-align: center;
   color: var(--texto1);
   font-size: 34px;
   font-family: var(--texto1);
@@ -250,8 +214,7 @@ h1 {
   color: black;
   font-size: 32px;
   font-family: "Alfa Slab One";
-  margin: 10px 500px;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 #home:hover h1 {
@@ -261,71 +224,50 @@ h1 {
   transition-duration: 1s;
 }
 #home:hover {
-  height: 450px;
+  transform: scale(1.01);
   transition-duration: 2s;
 }
-/* section */
+/* section nuestras cervezas */
 
-@media only screen and (max-width: 600px) {
-  article div img {
-    width: 90%;
-    height: 70%;
-  }
-  .gris {
-    z-index: -2;
-  }
-}
-@media only screen and (min-width: 600px) {
-  .gris {
-    z-index: -2;
-  }
-  article #imgbirra {
-    width: 300px;
-    height: 150px;
-  }
-}
 
-@media only screen and (min-width: 768px) {
-  .gris {
-    width: 0px;
-    height: 0px;
-    z-index: -2;
-  }
-  article #imgbirra {
-    width: 300px;
-    height: 150px;
-  }
+@media only screen and (max-width: 1200px) {
+#art{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}  
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media only screen and (min-width: 992px) {
-  article #imgbirra {
-    width: 200px;
-    height: 150px;
-    position: relative;
-    margin: 0px;
-  }
+section article .gris{
+  width: 0px;
+}
+#cervezas123 article{
+  width: 700px;
+}
+#cervezas123 article div img{
+width: 300px;
+}
 }
 
-@media only screen and (max-width: 992px) {
-  .gris {
-    z-index: -1;
+@media only screen and (max-width: 768px){
+  #cervezas123 article{
+    width: 500px;
   }
-  #padre {
-    width: 100%;
-  }
-  #cervezas123 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #cervezas123 article {
-    width: 80%;
-  }
+  #cervezas123 article div img{
+    width: 150px;
+    }
 }
-
-@media only screen and (min-width: 1200px) {
-  .gris {
-    z-index: 1;
+@media only screen and (max-width: 600px){
+  #cervezas123 article{
+    width: 400px;
   }
+  #cervezas123 article div img{
+    width: 120px;
+    }
 }
 
 #nc {
@@ -339,6 +281,7 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
 
 .tiposcervezas {
   color: black;
@@ -404,150 +347,19 @@ div section article p {
   text-align: center;
   font-size: 15px;
   font-family: "Lobster", cursive;
-  font-weight: 500px;
+  padding: 5%;
 }
 
 #imgbirra:hover {
   opacity: 0.8;
-  width: 200px;
-  height: 160px;
+  transform: scale(1.1);
 }
 
 div section article p:hover {
   text-decoration: underline;
 }
 
-#nosotros {
-  font-size: 40px;
-  text-align: center;
-  text-decoration-line: underline;
-  color: coral;
-}
 
-#nosotros1 {
-  margin: 25px 100px;
-  text-align-last: center;
-  align-items: center;
-}
-#nosotros1a p {
-  font-size: 14px;
-  font-family: var(--texto1);
-}
-
-@media only screen and (min-width: 1200px) {
-  #nosotros1a p {
-    width: 90%;
-  }
-  #nosotros1a span img {
-    width: 80%;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  #nosotros1a span img {
-    width: 80%;
-  }
-  #nosotros1a p {
-    text-align: center;
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  #nosotros1a span img {
-    width: 80%;
-  }
-  #nosotros1a p {
-    text-align: center;
-    width: 90%;
-  }
-}
-
-#nosotros1a {
-  background-color: darkgray;
-}
-body span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#nosotros1a h3 {
-  color: #222831;
-  font-size: 25px;
-  font-family: sans-serif;
-}
-
-#sucursales {
-  display: flex;
-  justify-content: space-around;
-}
-
-.punto1 {
-  background-image: url(https://i2.wp.com/hipertextual.com/wp-content/uploads/2020/04/hipertextual-mas-facil-durante-cuarentena-google-maps-muestra-que-restaurantes-envian-domicilio-2020815281.jpg?fit=1200%2C800&ssl=1);
-  background-position: center;
-  width: 150px;
-  height: 150px;
-  box-shadow: 7px 7px 25px -1px;
-  text-align: center;
-  background-size: cover;
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.punto2 {
-  background-image: url(https://i2.wp.com/hipertextual.com/wp-content/uploads/2020/04/hipertextual-mas-facil-durante-cuarentena-google-maps-muestra-que-restaurantes-envian-domicilio-2020815281.jpg?fit=1200%2C800&ssl=1);
-  background-position: center;
-  width: 150px;
-  height: 150px;
-  box-shadow: 7px 7px 25px -1px;
-  text-align: center;
-  background-size: cover;
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.punto3 {
-  background-image: url(https://i2.wp.com/hipertextual.com/wp-content/uploads/2020/04/hipertextual-mas-facil-durante-cuarentena-google-maps-muestra-que-restaurantes-envian-domicilio-2020815281.jpg?fit=1200%2C800&ssl=1);
-  background-position: center;
-  width: 150px;
-  height: 150px;
-  box-shadow: 7px 7px 25px -1px;
-  text-align: center;
-  background-size: cover;
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.punto4 {
-  background-image: url(https://i2.wp.com/hipertextual.com/wp-content/uploads/2020/04/hipertextual-mas-facil-durante-cuarentena-google-maps-muestra-que-restaurantes-envian-domicilio-2020815281.jpg?fit=1200%2C800&ssl=1);
-  background-position: center;
-  width: 150px;
-  height: 150px;
-  box-shadow: 7px 7px 25px -1px;
-  text-align: center;
-  background-size: cover;
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.nosotros1b {
-  color: black;
-  text-decoration-line: none;
-  font-size: 12px;
-  text-align-last: center;
-  position: absolute;
-  margin: 100px 0px;
-  font-weight: bold;
-}
 
 /* formulario */
 
@@ -563,7 +375,7 @@ body span {
 }
 div form {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -589,6 +401,7 @@ div form {
 }
 
 footer {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -605,13 +418,125 @@ footer {
     text-align: center;
   }
 }
+
+/* ubi, form */
+
+#contactanos{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+}
+
 #ubicacion {
   text-align: center;
+  position: relative; 
 }
 
 #ubicacion iframe {
-  width: 900px;
-  height: 500px;
+  width: 550px;
+  height: 530px;
 }
+
+#formul{
+  position: relative;
+  margin:0px;
+}
+
+
+form a img:hover {
+  width: 60px;
+}
+
+.formu {
+  width: 330px;
+  height: 530px;
+  background: var(--vivos);
+  border-radius: 8px;
+  padding: 5px 30px;
+  box-sizing: border-box;
+  font-family: var(--texto1);
+ 
+}
+#contact {
+  margin: 10px 0;
+  padding-bottom: 5px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: var(--texto1);
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+form input:focus {
+  border-bottom: 2px solid var(--texto);
+}
+form p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+form button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+form button:hover{
+background-color: darkgray;
+transition: 100ms;
+transition-delay: 100ms;
+}
+@media only screen and (max-width: 992px) {
+#contactanos{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.formu{
+display: flex;
+margin: 30px 000px;
+justify-content: center;
+align-items: center;
+}
+}
+
+@media only screen and (max-width: 992px){
+  #contactanos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .formu{
+    display: flex;
+    margin: 00px 000px;
+    justify-content: center;
+    align-items: center;
+    } 
+}
+@media only screen and (max-width: 600px){
+  footer{
+    width: 550px
+}
+}
+
+
 
 
