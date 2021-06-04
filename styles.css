@@ -477,6 +477,16 @@ font-size: 30px;
 .nosotros2 img{
   margin: 0% -14%;
 }
+#nosotros .nosotros1 p{
+  text-align: center;
+height: 100%;
+font-size: 20px;
+}
+#nosotros .nosotros2 p{
+  text-align: center;
+height: 100%;
+font-size: 20px;
+}
 }
 
 
