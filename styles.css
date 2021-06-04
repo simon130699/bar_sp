@@ -8,7 +8,6 @@
 
 body {
   background-color: var(--vivos);
-  margin: 0px;
 }
 
 nav {
@@ -21,7 +20,6 @@ nav {
   z-index: 2;
   top: 0;
   background-color:var(--primero);
-  border: 1px solid black;
 }
 
 #logo {
@@ -39,22 +37,20 @@ nav {
 
 /* media query */
 @media only screen and (max-width: 600px) {
-  header #home {
-    width: 550px;
-  }
-  nav {
+  header{
     width: 100%;
   }
-  #ul1 ul li a {
-    font-size: 10px;
+  header #home {
+  width: 120%;
+  }
+  .h1{
+    font-size: 1px;
   }
 }
 
 @media only screen and (max-width: 768px) {
   header div h1 {
     font-size: 25px;
-  }
-  header div {
   }
   #ul1 ul li a {
     font-size: 20px;
@@ -72,9 +68,8 @@ nav {
     margin: 0px;
   }
   nav {
-    display: flex;
-    flex-direction: column;
     height: 120px;
+    width: 100%;
   }
   #ul1 ul li {
     margin-top: 70px;
@@ -106,8 +101,10 @@ li {
 }
 
 nav ul {
-  display: flex;
   position: relative;
+
+  display: flex;
+  justify-content: center;
 }
 
 nav a {
@@ -180,9 +177,7 @@ li:hover .marron4 {
   height: 500px;
   width: 100%;
   background-image: url(https://turismo.rionegro.gov.ar/files/contenidos/1547657058_slider-experiencias-cerveza-artesanal.jpg);
-  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
 
@@ -642,6 +637,11 @@ align-items: center;
  }
  @media only screen and (max-width: 768px){
    footer{
-     width: 100%;
+     margin: -1px;
+     width: 600px;
+   }
+   #terminos{
+    margin: -1px;
+    width: 600px;
    }
  }
