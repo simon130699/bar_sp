@@ -8,7 +8,7 @@
 
 body {
   background-color: var(--vivos);
-  margin:0px;
+  margin: 0px;
 }
 
 nav {
@@ -20,7 +20,8 @@ nav {
   position: fixed;
   z-index: 2;
   top: 0;
-  background-color: var(--vivos);
+  background-color:var(--primero);
+  border: 1px solid black;
 }
 
 #logo {
@@ -37,65 +38,63 @@ nav {
 }
 
 /* media query */
-@media only screen and (max-width: 600px){
- header #home{
+@media only screen and (max-width: 600px) {
+  header #home {
     width: 550px;
   }
-nav{
-width: 100%;
-}
-#ul1 ul li a{
-  font-size: 10px;
-}
+  nav {
+    width: 100%;
+  }
+  #ul1 ul li a {
+    font-size: 10px;
+  }
 }
 
-@media only screen and (max-width: 768px){
-  header div h1{
+@media only screen and (max-width: 768px) {
+  header div h1 {
     font-size: 25px;
   }
-  header div{
+  header div {
   }
-#ul1 ul li a{
-  font-size: 20px;
+  #ul1 ul li a {
+    font-size: 20px;
+  }
 }
-}
-
 
 @media only screen and (max-width: 992px) {
-  header div h1{
+  header div h1 {
     position: absolute;
     margin-top: 50px;
     left: 160px;
   }
-nav #logo{
-  position: absolute;
-  margin: 0px;
-
-}
-nav{
-  display: flex;
-  flex-direction: column;
-  height: 120px;
-}
-#ul1 ul li  {
-margin-top: 70px;
-}
-ul li .marron1{
-width: 0px;
-height: 0px;
-}
-ul li .marron2{
-  width: 0px;
-  height: 0px;
-}
-ul li .marron3{
-  width: 0px;
-  height: 0px;
-}
-ul li .marron4{
-  width: 0px;
-  height: 0px;
-}
+  nav #logo {
+    position: absolute;
+    margin: 0px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+  }
+  #ul1 ul li {
+    margin-top: 70px;
+  }
+  ul li .marron1 {
+    width: 0px;
+    height: 0px;
+  }
+  ul li .marron2 {
+    width: 0px;
+    height: 0px;
+  }
+  ul li .marron3 {
+    width: 0px;
+    height: 0px;
+  }
+  ul li .marron4 {
+    width: 0px;
+    height: 0px;
+  }
 }
 
 li {
@@ -187,14 +186,13 @@ li:hover .marron4 {
   background-size: cover;
 }
 
-
 header {
   width: 100%;
   position: relative;
-  margin:100px 0px 0px 00px;
+  margin: 100px 0px 0px 00px;
 }
 
-#home1{
+#home1 {
   width: 100%;
   text-align: center;
 }
@@ -229,45 +227,44 @@ h1 {
 }
 /* section nuestras cervezas */
 
-
 @media only screen and (max-width: 1200px) {
-#art{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}  
-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-section article .gris{
-  width: 0px;
-}
-#cervezas123 article{
-  width: 700px;
-}
-#cervezas123 article div img{
-width: 300px;
-}
+  #art {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section article .gris {
+    width: 0px;
+  }
+  #cervezas123 article {
+    width: 700px;
+  }
+  #cervezas123 article div img {
+    width: 300px;
+  }
 }
 
-@media only screen and (max-width: 768px){
-  #cervezas123 article{
+@media only screen and (max-width: 768px) {
+  #cervezas123 article {
     width: 500px;
   }
-  #cervezas123 article div img{
+  #cervezas123 article div img {
     width: 150px;
-    }
+  }
 }
-@media only screen and (max-width: 600px){
-  #cervezas123 article{
+@media only screen and (max-width: 600px) {
+  #cervezas123 article {
     width: 400px;
   }
-  #cervezas123 article div img{
+  #cervezas123 article div img {
     width: 120px;
-    }
+  }
 }
 
 #nc {
@@ -281,7 +278,6 @@ width: 300px;
   display: flex;
   justify-content: center;
 }
-
 
 .tiposcervezas {
   color: black;
@@ -359,8 +355,6 @@ div section article p:hover {
   text-decoration: underline;
 }
 
-
-
 /* formulario */
 
 #contacto {
@@ -400,28 +394,74 @@ div form {
   }
 }
 
-footer {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-color: var(--texto);
-  font-weight: bold;
-  box-shadow: 7px 7px 25px -1px;
+/* nosotros */
+#nosotros{
+  padding: 0% 20%;
 }
 
-@media only screen and (max-width: 600px) {
-  div footer {
+.nosotros1{
+  display: flex;
+  flex-direction: row;
+}
+.nosotros1 img{
+  width: 500px;
+  height: 400px;
+  border: var(--vivos) solid;
+  border-radius: 50px;
+}
+
+#nosotros p{
+padding: 2%;
+text-align: center;
+font-family: var(--texto1);
+font-size: 30px;
+}
+
+.nosotros2{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.nosotros2 img{
+  width: 440px;
+  height: 400px;
+  border: var(--vivos) solid;
+  border-radius: 50px;
+}
+@media only screen and (max-width: 1200px){
+  .nosotros1{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  }
+  .nosotros1 img{
+    margin: 0% 10%;
+    width: 400px;
+    height: 330px;
+  }
+  .nosotros2{
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros2 img{
+    margin: 0% 10%;
+    width: 400px;
+    height: 330px;
   }
 }
+@media only screen and (max-width: 600px){
+.nosotros1 img{
+  margin: 0% -14%;
+}
+.nosotros2 img{
+  margin: 0% -14%;
+}
+}
+
+
+
 
 /* ubi, form */
 
-#contactanos{
+#contactanos {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -430,33 +470,37 @@ footer {
 
 #ubicacion {
   text-align: center;
-  position: relative; 
+  position: relative;
 }
 
 #ubicacion iframe {
   width: 550px;
-  height: 530px;
+  height: 350px;
 }
 
-#formul{
+#ubicacion p{
+  font: 10px;
+  font-family: var(--texto1);
+}
+
+#formul {
   position: relative;
-  margin:0px;
+  margin: 0px;
 }
-
 
 form a img:hover {
   width: 60px;
 }
 
 .formu {
+  margin: 10px;
   width: 330px;
   height: 530px;
-  background: var(--vivos);
+  background:white;
   border-radius: 8px;
   padding: 5px 30px;
   box-sizing: border-box;
   font-family: var(--texto1);
- 
 }
 #contact {
   margin: 10px 0;
@@ -499,44 +543,105 @@ form button {
   cursor: pointer;
   transition: all 0.3s;
 }
-form button:hover{
-background-color: darkgray;
-transition: 100ms;
-transition-delay: 100ms;
-}
-@media only screen and (max-width: 992px) {
-#contactanos{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.formu{
-display: flex;
-margin: 30px 000px;
-justify-content: center;
-align-items: center;
-}
+form button:hover {
+  background-color: darkgray;
+  transition: 100ms;
+  transition-delay: 100ms;
 }
 
-@media only screen and (max-width: 992px){
-  #contactanos{
+
+@media only screen and (max-width: 992px) {
+  #contactanos {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .formu{
+  .formu {
     display: flex;
-    margin: 00px 000px;
+    margin: 10px 20%;
     justify-content: center;
     align-items: center;
-    } 
-}
-@media only screen and (max-width: 600px){
-  footer{
-    width: 550px
-}
+  }
 }
 
+/* footer */
+footer {
+  background-color: darkgray;
+  font-size: 15px;
+  font-family: var(--texto1);
 
+}
 
+#footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#footer1{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+footer h2{
+  font-size: 30px;
+}
+footer a{
+  text-decoration: none;
+  color: black;
+}
+footer h2:hover{
+  transform: scale(1.01);
+}
+footer h3:hover{
+  opacity: 0.7;
+}
 
+footer input{
+  margin: 1%;
+  width: 300px;
+  border-radius: 5px;
+  padding: 5px;
+}
+footer input:hover{
+  border-style: none;
+}
+footer a:hover{
+  opacity: 0.5;
+}
+ footer button{
+   width: 100px;
+   font-family: var(--texto1);
+  }
+ footer button:hover{
+  background-color: var(--vivos);
+ }
+ #terminos{
+   background-color: darkgray;
+ }
+ #terminos p{
+   font-size: 14px;
+   text-align-last: center;
+ }
+ #black{
+ margin: 0% 20%;
+ align-items: center;
+ width: 900px;
+ height: 2px;
+ background-color: black;
+ }
+ @media only screen and (max-width: 1200px){
+ footer{
+width: 100%;
+align-items: center;
+ }
+ #footer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ }
+ @media only screen and (max-width: 768px){
+   footer{
+     width: 100%;
+   }
+ }
